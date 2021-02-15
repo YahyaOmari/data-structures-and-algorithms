@@ -59,7 +59,7 @@ const allUpperCase = (arr) => {
   // Solution code here...
   arr.forEach(element => {
     thirdArray.push(element.toUpperCase());
-    
+
   });
   return thirdArray;
 };
@@ -77,14 +77,14 @@ let fourthArray = [];
 
 const greeting = (word) => {
   // Solution code here...
-    return word.toUpperCase() + "!";
+  return word.toUpperCase() + "!";
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
   words.forEach(element => {
-    fourthArray.push(callback(element ));
-    
+    fourthArray.push(callback(element));
+
   });
   return fourthArray;
 
@@ -116,9 +116,9 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  
+
   for (let i = 0; i < times; i++) {
-    callback(arr,num);
+    callback(arr, num);
   }
   return arr;
 };
@@ -142,24 +142,34 @@ This function should use forEach to populate your grocery list based on the stor
 
 ////////////////Still need work////////////////
 
+// const createList = (availableItems) => {
+// Solution code here...
+// let sixthArray = [ 
+//   { name: 'apples', available: true },
+//   { name: 'pears', available: true },
+//   { name: 'oranges', available: false },
+//   { name: 'bananas', available: true },
+//   { name: 'blueberries', available: false }
+// ];
+
+// let list = [];
+// sixthArray.forEach(element =>{
+//   if (element.available == true) {
+//     list.push(element.name)
+//   }
+// });
+// return list;
 const createList = (availableItems) => {
   // Solution code here...
-  let sixthArray = [ 
-    { name: 'apples', available: true },
-    { name: 'pears', available: true },
-    { name: 'oranges', available: false },
-    { name: 'bananas', available: true },
-    { name: 'blueberries', available: false }
-  ];
-
   let list = [];
-  availableItems.forEach(element =>{
-    if (sixthArray.available == true) {
-      list.push(sixthArray.name)
+  availableItems.forEach(element => {
+    if (element.available == true) {
+      list.push(element.name)
     }
   });
   return list;
 };
+// };
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
