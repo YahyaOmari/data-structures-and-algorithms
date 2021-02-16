@@ -10,15 +10,13 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
+  let newArray = [];
   arr.forEach(element => {
-    let newArray = [];
-    for (let i = 0; i < arr.length; i++) {
-      Math.pow(arr[i], 3);
-      // newArray.push(Math.pow(arr[i], 3));
-    }
-    return arr;
-    // return newArray;
+      // Math.pow(arr[i], 3);
+      newArray.push(Math.pow(element, 3));
+    // return arr;
   });
+  return newArray;
 }
 
 /* ------------------------------------------------------------------------------------------------
