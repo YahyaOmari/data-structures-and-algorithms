@@ -26,10 +26,11 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
-  for (let i = 0; i < starWarsPeople.height; i++) {
-    starWarsArr.push(starWarsPeople.height.sort(function(a, b){return a-b}));
-  }
-  return starWarsArr;
+
+  starWarsArr.sort(function(a, b){
+    return Number(b.height) - Number(a.height);
+  });
+return starWarsArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -40,8 +41,8 @@ Write a function named removeThree that takes an index and an array. The functio
 
 const removeThree = (idx, arr) => {
   // Solution code here...
-  idx = 3;
-  arr.slice(3);
+  
+  arr.splice(idx, 3);
   return arr;
 };
 
@@ -53,8 +54,7 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
-  arr.join();
-  return arr;
+  return arr.join(" ");
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,6 +92,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  return arr.split("")
 };
 
 
