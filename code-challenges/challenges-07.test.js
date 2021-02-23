@@ -8,14 +8,17 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 
 const replaceZeros = (string) => {
   // // Solution code here...
-  let array = string.split("").map(element =>{
-    if (element == '0') {
-      return "zero"
-    } else {
-      return element;
-    }
-  });
-  return array.join("");
+  // let array = string.split("").map(element =>{
+  //   if (element == '0') {
+  //     return "zero"
+  //   } else {
+  //     return element;
+  //   }
+  // });
+  // return array.join("");
+
+  // New code .. 
+  return string.replace(/0/g, "zero");
 }
 
 /* ------------------------------------------------------------------------------------------------
