@@ -9,6 +9,9 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str){
   // Solution code here...
+  let numberTen;
+  numberTen = str.split('').reverse().splice(0,10).reverse();
+  return numberTen;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,6 +40,9 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
+  let array;
+  array = arr.filter(conAnd => conAnd.indexOf('and') > -1);
+  return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -90,6 +96,13 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  return arr.filter(value => {
+    if (forbiddenValues.includes(value)) {
+      return false;
+    } else {
+      return true;
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
