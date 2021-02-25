@@ -96,12 +96,13 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
+  let checking = false;
   Object.values(obj).forEach(val => {
     if (val == value) {
-        return true;
+        return checking = true;
     }
   }); 
-  return false;
+  return checking;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
