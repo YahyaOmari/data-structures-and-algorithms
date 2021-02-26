@@ -24,8 +24,8 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  // let reverseArray = [];
-  let reverseArray = arr.map(value => value.name.split("").reverse().join(''));
+  let reverseArray;
+  reverseArray = arr.map(value => value.name.split("").reverse().join(''));
   return reverseArray;
 }
 
@@ -80,6 +80,18 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  let diveFive = [];
+
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] %5 === 0) {
+      diveFive.push(input[i]);
+    }
+  }
+  let powTwo = Math.pow(diveFive,2);
+
+  // let diveFive = input.filter(x => x%5 === 0);
+  // let powTwo = Math.pow(diveFive,2);
+  return powTwo;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -145,9 +157,14 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  // Solution code here..
+  let searchArray;
+  searchArray = data.filter(element => element.gender == 'male' || element.gender == 'female');
+  let searchNames = searchArray.map(nameGender => {
+    return nameGender.name;
+  })
+  return searchNames.join(" and ");
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 
 
