@@ -16,7 +16,7 @@ const toLastNames = people => {
   let array = people.map(value=>{
     return value.firstName+ ' ' + value.lastName;
   });
-  return result;
+  return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ If the word is between 5 and 10 characters long, return true. Otherwise, return 
 
 const validateWord = (word) => {
   // Solution code here...
-  (word.toString().match(/^[a-z]{5,10}$/i)) ? true : false;
+  return (word.toString().match(/^[a-z]{5,10}$/i)) ? true : false;
 };
 
 /* ------------------------------------------------------------------------------------------------
