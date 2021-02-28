@@ -80,11 +80,12 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  let allElements = input.length;
   let diveFive = [];
 
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] %5 === 0) {
-      diveFive.push(input[i]);
+  for (let i = 0; i < allElements; i++) {
+    if (allElements[i] %5 === 0) {
+      diveFive.push(allElements[i]);
     }
   }
   let powTwo = Math.pow(diveFive,2);
