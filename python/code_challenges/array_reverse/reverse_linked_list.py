@@ -6,4 +6,8 @@ def reverse_list(ll):
         linked list in reversed form
     """
     # put your function implementation here
-    return ll
+    ## FIRST WAY
+    ll = ll[::-1]
+    print(ll)
+
+reverse_list([1,2,3,4,5,"ff", "yahya"])
