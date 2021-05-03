@@ -1,2 +1,2 @@
-def reverse_list(list):
+def reverseArray(list):
     return list[::-1]
