@@ -10,6 +10,10 @@ Under the `data-structures-and-algorithms` repository, at the top level is a fol
 
 Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
 
-### 401 Data Structures, Code Challenges
+# 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+### Python 401, Code Challenges
+
+- [x] List Reverse
