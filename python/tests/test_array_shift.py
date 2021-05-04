@@ -1,4 +1,4 @@
-from code_challenges.array_shift.array_shift import insertShiftArray
+from challenges.array_shift.array_shift import insertShiftArray
 
 
 def test_insertShiftArray():
