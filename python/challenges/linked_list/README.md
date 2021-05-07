@@ -14,3 +14,8 @@
 
 ### Solution:
 <!-- Embedded whiteboard image -->
+
+
+![Reversed List](../assets/linked_list.jpg)
+
+- [Code of Linked List](linked_list.py)
