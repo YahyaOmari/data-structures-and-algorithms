@@ -28,6 +28,7 @@
 #   current_node = current_node.next_node
     # print (current_node)
 
+# Defining Node Class
 class Node:
   def __init__ (self, data = None):
     self.data = data
@@ -37,7 +38,9 @@ class Node:
   def __str__ (self, data):
     return f'{self.data}'
 
+# Define linked list
 class Linking:
+  # Constructor
   def __init__(self):
     self.head = None
 
@@ -45,9 +48,13 @@ class Linking:
   def insert(self, data=None):
     new_node = Node(data)
 
+    # Once we have a head 
     if self.head:
+      # set our current pointer to the head
       new_node.next = self.head
+      #Assign new_node to self.head 
     self.head = new_node
+      # while there is a following node that's not None
 
   def includes(self,value):
     current = self.head
@@ -59,15 +66,20 @@ class Linking:
     return including
 
   def __str__(self):
+    # step 0 - create a new empty string
     output = ""
 
+    # step 1 iterate over each node
     current = self.head
     while current:
+      # step 2 - insert each data to the string
       output += "{%s} -> " %(current.data,)
       
+      # step 2b:  move to the next item
       current = current.next
     output += "NULL"
 
+    # step 3 - return the final string
     return output
 
 
