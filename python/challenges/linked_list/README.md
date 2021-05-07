@@ -1,0 +1,16 @@
+# Linked List:
+<!-- Short summary or background information -->
+- The challenge is about a Linked List is a sequence of Nodes that are connected/linked to each other. The most defining feature of a Linked List is that each Node references the next Node in the link.
+
+### Challenge:
+<!-- Description of the challenge -->
+- Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node. Within the LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Singly Linked List.
+- O(1) Time/space performance for insert method.
+- O(n) Time and O(1) space performance for includes method.
+
+### Solution:
+<!-- Embedded whiteboard image -->
