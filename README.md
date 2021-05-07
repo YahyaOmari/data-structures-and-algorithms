@@ -17,37 +17,37 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### Python 401, Code Challenges
 
 
-- [Reversed List](./python/challenges/array_reverse/README)
+- [Reversed List](./python/challenges/array_reverse/README.md)
 
 <!-- ------------------------------------------------- -->
-- [List_shift](./python/challenges/array_shift/README)
+- [List_shift](./python/challenges/array_shift/README.md)
 
 <!-- ------------------------------------------------- -->
-- [Array-binary-search](./python/challenges/array_binary_search/README)
+- [Array-binary-search](./python/challenges/array_binary_search/README.md)
 
 <!-- ------------------------------------------------- -->
-- [Linked-list](./python/challenges/linked_list/README)
+- [Linked-list](./python/challenges/linked_list/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README)
+- [](./python/challenges//README.md)
