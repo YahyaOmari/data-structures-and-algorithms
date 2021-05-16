@@ -29,7 +29,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [Linked-list](./python/challenges/linked_list/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README.md)
+- [Append and Insert to Linked-list](./python/challenges/linked_list/README.md)
 
 <!-- ------------------------------------------------- -->
 - [](./python/challenges//README.md)
