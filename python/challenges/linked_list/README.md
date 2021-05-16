@@ -19,3 +19,23 @@
 ![Reversed List](../assets/linked_list.jpg)
 
 - [Code of Linked List](linked_list.py)
+
+# ll-Insertions to Linked List:
+<!-- Short summary or background information -->
+- Append to a linked list, so the number you are appending to will be added to the end of the ll.
+- Insert before and after the ll.
+
+### Challenge:
+<!-- Description of the challenge -->
+- Creating methods to insert to the ll before and after, or appending to it.
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Before and after, it will be a while loop. To search for the data then insert new_value before or after it depends on the function. And to append it will while loop to end and append the new value.
+
+### Solution:
+
+<!-- Embedded whiteboard image -->
+
+![Reversed List](../assets/linked_list_insert_append.png)
+- [Code of appending, insertion to Linked List](linked_list.py)
