@@ -58,6 +58,20 @@ def test_insert_before2(list_test):
     actual = f"{list_test}"
     assert excpected == actual
 
+def test_kthFromEnd(list_test):
+    list_test.append(88)
+    # print(list_test)
+    actual = list_test.kthFromEnd(1)
+    excpected = 'Zakaria'
+    assert excpected == actual
+
+def test_kthFromEnd2(list_test):
+    # print(list_test)
+    actual = list_test.kthFromEnd(88)
+    print(actual)
+    excpected = 'Sorry, the value is larger than the linked list'
+    assert excpected == actual
+
 
 
 @pytest.fixture

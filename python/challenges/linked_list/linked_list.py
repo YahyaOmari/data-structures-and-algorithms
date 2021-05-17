@@ -102,7 +102,29 @@ class Linking:
 
       if current == None:
         raise Exception("Sorry, search value found")
+# ------------------------------------------
+# -----------------kthFromEnd---------------
+# ------------------------------------------
+  def kthFromEnd(self, k):
+    current = self.head
+    count = 0
+    
+    while current.next:
+      current = current.next
+      count += 1
 
+    if k > count:
+      return("Sorry, the value is larger than the linked list")
+
+    if k > count:
+      raise Exception("Sorry, the value is larger than the linked list")
+      
+
+    current = self.head
+    for i in range(count - k):
+      current = current.next
+    print(current.data)
+    return current.data
 
 
 if __name__ == "__main__":
@@ -119,4 +141,7 @@ if __name__ == "__main__":
   linked.insert_before("hello", 'world')
 
   print(linked)
+
+  print(linked.kthFromEnd(88))
+
   # print(linked.includes("Zakaria"), linked.includes("Yahya"), linked.includes(18))
