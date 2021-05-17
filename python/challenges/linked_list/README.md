@@ -56,6 +56,6 @@
 
 <!-- Embedded whiteboard image -->
 
-![Reversed List](../assets/linked_list_insert_append.png)
+![Reversed List](../assets/linked_list_ll.jpg)
 
 - [Code of appending, insertion to Linked List](linked_list.py)
