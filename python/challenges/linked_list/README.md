@@ -39,3 +39,23 @@
 
 ![Reversed List](../assets/linked_list_insert_append.png)
 - [Code of appending, insertion to Linked List](linked_list.py)
+
+# lll-Insertions to Linked List:
+<!-- Short summary or background information -->
+- Method which takes a number, k as a parameter. Return the node's value which is k from the end of the linked list 
+- Insert before and after the ll.
+
+### Challenge:
+<!-- Description of the challenge -->
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- O(n)
+
+### Solution:
+
+<!-- Embedded whiteboard image -->
+
+![Reversed List](../assets/linked_list_insert_append.png)
+
+- [Code of appending, insertion to Linked List](linked_list.py)
