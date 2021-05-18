@@ -72,50 +72,53 @@ def test_kthFromEnd2(list_test):
     excpected = 'Sorry, the value is larger than the linked list'
     assert excpected == actual
 
-
+# -----------------------------------------------------------
+# -----------------------------------------------------------
 def test_zipList(list_test1,list_test2):
 
     actual = Linking.zipLists(list_test1,list_test2)
-    excpected = "{1} -> {5} -> {3} -> {9} -> {2} -> {4} ->  NULL"
+    excpected = "{2} -> {3} -> {1} -> NULL"
     assert excpected == actual
-    
+
 def test_zipList_unbalance1(list_test1,list_test2):
 
     list_test1.append(4)
     actual = Linking.zipLists(list_test1,list_test2)
-    excpected = "{1} -> {5} -> {3} -> {9} -> {2} -> {4} -> {4} ->  NULL"
-
+    excpected = "{2} -> {3} -> {1} -> {4} -> NULL"
     assert excpected == actual
+
 def test_zipList_unbalance2(list_test1,list_test2):
 
     list_test2.append(4)
     actual = Linking.zipLists(list_test1,list_test2)
-    excpected = "{5} -> {1} -> {9} -> {3} -> {4} -> {2} -> {4} ->  NULL"
+    excpected = "{4} -> {2} -> {9} -> {3} -> {5} -> {1} -> {4} -> NULL"
     assert excpected == actual
 
 def test_zipList_None(list_test1):
 
     list_test2 = Linking()
     actual = Linking.zipLists(list_test1,list_test2)
-    excpected = "{1} -> {3} -> {2} ->  NULL"
+    excpected = "{2} -> {3} -> {1} -> NULL"
     assert excpected == actual
     
 @pytest.fixture
 def list_test1():
 
     linked1 = Linking()
-    linked1.append(1)
-    linked1.append(3)
-    linked1.append(2)
+    linked1.insert(1)
+    linked1.insert(3)
+    linked1.insert(2)
 
-    return linked1@pytest.fixture
+    return linked1
+    
 
+@pytest.fixture
 def list_test2():
 
     linked2 = Linking()
-    linked2.append("5")
-    linked2.append("9")
-    linked2.append(4)
+    linked2.insert("5")
+    linked2.insert("9")
+    linked2.insert(4)
     return linked2
 
 

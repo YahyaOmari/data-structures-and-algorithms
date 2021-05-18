@@ -128,52 +128,59 @@ class Linking:
 # ------------------------------------------
 # -----------------zipLists ----------------
 # ------------------------------------------
-
-  def zipLists(linked_list_first, linked_list_second):
-    current1 = linked_list_first.head
-    current2 = linked_list_second.head
-
-    length1 =0
-    length2 =0
+  def zipLists(first, second):
+    current1 = first.head
+    current2 = second.head
+    length1 = 0
+    length2 = 0
     temp = {}
-    
     while(current1):
       length1 += 1
       current1 = current1.next
-    
     while(current2):
       length2 += 1
       current2 = current2.next
-    
-    if length1 < length2:
-       temp =linked_list_first
-       first = linked_list_second
-       second =temp
-    current1 = first.head
-    current2 = second.head
-    
-    while current1 and current2:
-      first_next = current1.next
-      second_next = current2.next
-      current2.next = first_next
-      current1.next = current2
-      current1 = first_next
-      current2 = second_next
-      second.head = current2
+      if length1 < length2:
+        temp =first
+        first = second
+        second =temp
+        current1 = first.head
+        current2 = second.head
+      while current1 and current2:
+            first_next = current1.next
+            second_next = current2.next
+            current2.next = first_next 
+            current1.next = current2 
+            current1 = first_next
+            current2 = second_next
+            second.head = current2
     return f"{first}"
 
 if __name__ == "__main__":
   linked = Linking()
-  linked.insert("Zakaria")
-  linked.insert("Yahya")
-  linked.insert(8)
+  llist1 = Linking()
+  llist2 = Linking()
+  llist1.insert(3)
+  llist1.insert(2)
+  llist2.insert(8)
+  llist2.insert(7)
+  llist2.insert(6)
+  llist2.insert(5)
+  llist2.insert(4)
+  print(llist1)
+  print(llist2)
+  print(Linking.zipLists(llist1,llist2))
+  
+  # linked.insert("Zakaria")
+  # linked.insert("Yahya")
+  # linked.insert(8)
   # linked.append(88)
   # linked.append(22)
   # linked.append(20)
   # linked.append(1)
-  linked.insert_before("Yahya", 88)
-  linked.insert_before(88, "hello")
-  linked.insert_before("hello", 'world')
+  # linked.insert_before("Yahya", 88)
+  # linked.insert_before(88, "hello")
+  # linked.insert_before("hello", 'world')
   # print(linked)
 
   # print(linked.kthFromEnd(88))
