@@ -1,5 +1,5 @@
 import pytest
-from challenges.linked_list.linked_list import *
+from challenges.linked_list.linked_list import Linking
 
 
 # def test_import():
@@ -72,6 +72,51 @@ def test_kthFromEnd2(list_test):
     excpected = 'Sorry, the value is larger than the linked list'
     assert excpected == actual
 
+
+def test_zipList(list_test1,list_test2):
+
+    actual = Linking.zipLists(list_test1,list_test2)
+    excpected = "{1} -> {5} -> {3} -> {9} -> {2} -> {4} ->  NULL"
+    assert excpected == actual
+    
+def test_zipList_unbalance1(list_test1,list_test2):
+
+    list_test1.append(4)
+    actual = Linking.zipLists(list_test1,list_test2)
+    excpected = "{1} -> {5} -> {3} -> {9} -> {2} -> {4} -> {4} ->  NULL"
+
+    assert excpected == actual
+def test_zipList_unbalance2(list_test1,list_test2):
+
+    list_test2.append(4)
+    actual = Linking.zipLists(list_test1,list_test2)
+    excpected = "{5} -> {1} -> {9} -> {3} -> {4} -> {2} -> {4} ->  NULL"
+    assert excpected == actual
+
+def test_zipList_None(list_test1):
+
+    list_test2 = Linking()
+    actual = Linking.zipLists(list_test1,list_test2)
+    excpected = "{1} -> {3} -> {2} ->  NULL"
+    assert excpected == actual
+    
+@pytest.fixture
+def list_test1():
+
+    linked1 = Linking()
+    linked1.append(1)
+    linked1.append(3)
+    linked1.append(2)
+
+    return linked1@pytest.fixture
+
+def list_test2():
+
+    linked2 = Linking()
+    linked2.append("5")
+    linked2.append("9")
+    linked2.append(4)
+    return linked2
 
 
 @pytest.fixture

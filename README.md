@@ -35,7 +35,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [kthFromEnd](./python/challenges/linked_list/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README.md)
+- [zipLists](./python/challenges/linked_list/README.md)
 
 <!-- ------------------------------------------------- -->
 - [](./python/challenges//README.md)

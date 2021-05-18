@@ -130,31 +130,37 @@ class Linking:
 # ------------------------------------------
 
   def zipLists(linked_list_first, linked_list_second):
-
-
-    new_link = Linking()
-
     current1 = linked_list_first.head
-    
     current2 = linked_list_second.head
 
-    while current1 or current2:
-      if current1:
-          
-        new_link.append(current1.data)
-        
-      if current1.next:
-        current1 =  current1.next
-
-      
-      if current2:
-
-        new_link.append(current2.data)
-      
-      if current2.next:
-        current2 =  current2.next
-
-    return new_link
+    length1 =0
+    length2 =0
+    temp = {}
+    
+    while(current1):
+      length1 += 1
+      current1 = current1.next
+    
+    while(current2):
+      length2 += 1
+      current2 = current2.next
+    
+    if length1 < length2:
+       temp =linked_list_first
+       first = linked_list_second
+       second =temp
+    current1 = first.head
+    current2 = second.head
+    
+    while current1 and current2:
+      first_next = current1.next
+      second_next = current2.next
+      current2.next = first_next
+      current1.next = current2
+      current1 = first_next
+      current2 = second_next
+      second.head = current2
+    return f"{first}"
 
 if __name__ == "__main__":
   linked = Linking()
@@ -168,19 +174,6 @@ if __name__ == "__main__":
   linked.insert_before("Yahya", 88)
   linked.insert_before(88, "hello")
   linked.insert_before("hello", 'world')
-  
-  linked1 = Linking()
-  linked2 = Linking()
-
-  linked1.insert(1)
-  linked1.insert(2)
-  linked1.insert(3)
-
-  
-  linked2.insert(4)
-  linked2.insert(5)
-  linked2.insert(6)
-  print("Answer is", Linking.zipLists(linked1,linked2))
   # print(linked)
 
   # print(linked.kthFromEnd(88))
