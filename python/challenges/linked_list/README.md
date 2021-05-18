@@ -59,3 +59,22 @@
 ![Reversed List](../assets/linked_list_ll.jpg)
 
 - [Code of appending, insertion to Linked List](linked_list.py)
+
+
+# zipList:
+<!-- Short summary or background information -->
+- 
+### Challenge:
+<!-- Description of the challenge -->
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- O(n)
+
+### Solution:
+
+<!-- Embedded whiteboard image -->
+
+![Reversed List](../assets/ziplist.jpg)
+
+- [Code of appending, insertion to Linked List](linked_list.py)
