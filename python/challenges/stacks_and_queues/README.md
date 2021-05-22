@@ -29,4 +29,4 @@
 <!-- Embedded whiteboard image -->
 ## [Code of stacks_and_queues](stacks_and_queues.py)
 
-![stacks_and_queues](../assets/stack_queue.png)
+![stacks_and_queues](../assets/stack_queue.PNG)
