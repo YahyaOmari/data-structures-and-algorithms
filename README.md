@@ -38,7 +38,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [zipLists](./python/challenges/linked_list/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README.md)
+- [stacks_and_queues](./python/challenges/stacks_and_queues/README.md)
 
 <!-- ------------------------------------------------- -->
 - [](./python/challenges//README.md)
