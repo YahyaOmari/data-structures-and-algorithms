@@ -22,9 +22,7 @@ class Stack:
         self.top = Node(value)
     else:
       node = Node(value)
-      
       node.next = self.top
-      
       self.top = node
   
   def pop(self):
@@ -118,6 +116,39 @@ class Queue:
             current = current.next
         return "\n".join(items)
 
+class PseudoQueue:
+  def __init__(self):
+    self.first_stack = Stack()
+    self.second_stack = Stack()
+  
+  def enqueue(self, value):
+    self.first_stack.push(value)
+  
+  def dequeue(self):
+    if not self.second_stack.top and not self.first_stack.top:
+        return "Can not remove, because the queue is empty"
+      
+    while self.first_stack.top:
+      first_top = self.first_stack.pop()
+      self.second_stack.push(first_top)
+      
+    final = self.second_stack.pop()
+    temp = self.second_stack
+    self.second_stack =Stack()
+      
+    while temp.top:
+      temp_top = temp.pop()
+      self.first_stack.push(temp_top)
+    return final
+  
+  def __str__(self):
+    current = self.first_stack.top
+    items = []
+    while current:
+      items.append(str(current.value))
+      current = current.next
+    return "\n".join(items)
+
 if __name__ == "__main__":
   stack = Stack()
 
@@ -138,19 +169,27 @@ if __name__ == "__main__":
 #   # print(stack)
 #   stack.pop()
 
-  queue = Queue()
+#   queue = Queue()
+# #   print(queue)
+#   queue.enqueue("Abed")
+# # #   print(queue)
+#   queue.enqueue("Faisal")
+# # #   print(queue)
+#   queue.enqueue("Yahya")
 #   print(queue)
-  queue.enqueue("Abed")
-# #   print(queue)
-  queue.enqueue("Faisal")
-# #   print(queue)
-  queue.enqueue("Yahya")
-  print(queue)
-  print("------------------")
-#   print(queue.peek())
-  print(queue.dequeue())
+#   print("------------------")
+# #   print(queue.peek())
+#   print(queue.dequeue())
 #   queue.dequeue()
 #   queue.dequeue()
 #   print("********")
 #   print(queue)
 #   print(queue.is_empty())
+  fake = PseudoQueue()
+  fake.enqueue(4)
+  fake.enqueue(5)
+  fake.enqueue(6)
+  print(fake)
+  print(fake.dequeue())
+  print("--------------------")
+  print(fake)
