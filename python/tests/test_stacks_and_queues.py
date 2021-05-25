@@ -109,6 +109,39 @@ def test_queue_peek(test_queue):
     assert test_queue.front == None
 
 
+# -----------------------------------------
+# ------------queue_with_stack-------------
+# -----------------------------------------
 
+
+@pytest.fixture
+def queue_list():
+    test_list = [5, 10, 15, 20]
+    test_queue = PseudoQueue()
+    for i in test_list:
+        test_queue.enqueuePs(i)
     
-    
+    return test_queue
+
+
+def test_enqueue_to_empty():
+    test = PseudoQueue()
+    test.enqueuePs(5)
+    actual = test.__str__()
+    expected = "5"
+    assert actual == expected
+
+def test_enqueue(queue_list):
+    queue_list.enqueuePs(25)
+    actual = queue_list.__str__()
+    excepted = "25\n20\n15\n10\n5"
+    assert actual == excepted
+
+def test_dequeue(queue_list):
+    first_value = queue_list.dequeuePs()
+    second_value = queue_list.dequeuePs()
+    third_value = queue_list.dequeuePs()
+    fourth_value = queue_list.dequeuePs()
+    actual = [first_value, second_value, third_value, fourth_value]
+    excepted = [5, 10, 15, 20]
+    assert actual == excepted
