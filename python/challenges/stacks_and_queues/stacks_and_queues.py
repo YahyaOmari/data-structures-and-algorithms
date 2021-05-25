@@ -121,10 +121,10 @@ class PseudoQueue:
     self.first_stack = Stack()
     self.second_stack = Stack()
   
-  def enqueue(self, value):
+  def enqueuePs(self, value):
     self.first_stack.push(value)
   
-  def dequeue(self):
+  def dequeuePs(self):
     if not self.second_stack.top and not self.first_stack.top:
         return "Can not remove, because the queue is empty"
       
