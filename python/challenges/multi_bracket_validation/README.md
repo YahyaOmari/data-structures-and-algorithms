@@ -20,5 +20,5 @@
 
 # - [Code of multi-bracket-validation](multi_bracket_validation.py)
 
-![multi-bracket-validation](../assets/.jpg)
+![multi-bracket-validation](../assets/multi_bracker.jpg)
 
