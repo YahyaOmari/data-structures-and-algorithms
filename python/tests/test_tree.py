@@ -29,7 +29,7 @@ def test_init_right_and_left():
     node1.left = TNode(12)
     node1.right = TNode(13)
     binary_tree_test = BinaryTree(node1) 
-    actual = binary_tree_test.root.value , binary_tree_test.root.left.value , binary_tree_test.root.right.value
+    actual = binary_tree_test.root.data , binary_tree_test.root.left.data , binary_tree_test.root.right.data
     # print(actual)
     expected = 11,12,13
     assert actual == expected 
