@@ -78,39 +78,29 @@ class BinaryTree:
     walk(self.root)
     return ''.join(f"{post_order_list}")
 
-# class BinarySearchTreeNode:
-    def __init__(self, key):
-        self.key = key
-        self.left = None
-        self.right = None
-    
-    def add (self, data):
-        if self.key is None:
-            self.key = data
-            return
+  def max_value(self):
+    self.data = 0
 
-        if self.key > data:
-            if self.left:
-                self.left.add(data) # Using recursion
-            else:
-                self.left = BinarySearchTreeNode(data)
+    def walk(current):
+      if current:
+
+        if current.data > self.data:
+          self.data = current.data
         
-        else:
-            if self.right:
-                self.right.add(data)
-            else:
-                self.right = BinarySearchTreeNode(data)
-
-
-
-
+        if current.right:
+          walk(current.right)
+        
+        if current.left:
+          walk(current.left)
+    walk(self.root)
+    return self.data
+    
 
 if __name__ == "__main__":
     node1 = TNode(11)
     node1.left = TNode(12)
     node1.right = TNode(13)
     node1.right.left = TNode(14)
-
     binary_tree = BinaryTree(node1)
 
     print(binary_tree.pre_order())
@@ -122,6 +112,9 @@ if __name__ == "__main__":
 
     print("*******************")
     print(binary_tree.post_order())
+    print(binary_tree.max_value())
+
+
 
 # Think about
 class KNode:

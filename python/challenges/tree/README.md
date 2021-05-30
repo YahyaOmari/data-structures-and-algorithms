@@ -19,4 +19,23 @@
 # - [Code of Tree](tree.py)
 
 ![Tree](../assets/tree.PNG)
-<!-- ![Tree](../assets/tree.png) -->
+
+# Max Value:
+<!-- Short summary or background information -->
+- Create maximum number function.
+
+### Challenge:
+<!-- Description of the challenge -->
+- Find the maximum number in the tree.
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Time complexity => O(N)
+- Space complexity => O(1)
+
+### Solution:
+<!-- Embedded whiteboard image -->
+
+# - [Code of Tree](tree.py)
+
+![Tree](../assets/tree_max_value.PNG)
