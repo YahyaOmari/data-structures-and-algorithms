@@ -18,5 +18,5 @@
 
 # - [Code of Tree](tree.py)
 
-![Tree](../assets/tree.png)
+![Tree](../assets/tree.PNG)
 <!-- ![Tree](../assets/tree.png) -->
