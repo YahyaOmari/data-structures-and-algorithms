@@ -5,7 +5,7 @@ class TNode:
     self.right = None
 
 
-class BinaryTree:
+class BinaryTree():
   def __init__(self, root=None):
     self.root = root
   def __str__(self):
@@ -78,6 +78,10 @@ class BinaryTree:
     walk(self.root)
     return ''.join(f"{post_order_list}")
 
+# /////////////////////////////////////
+# ////////////// max_value/////////////
+# ////////////////////////////////////
+
   def max_value(self):
     self.data = 0
 
@@ -94,7 +98,30 @@ class BinaryTree:
           walk(current.left)
     walk(self.root)
     return self.data
+
+# //////////////////////////////////////
+# ///////// breadth_first//////////////
+# ////////////////////////////////////
+
+
+  def breadth_first(self, tree):
+    temp = []
+    results = []
     
+    if self.root:
+        temp.append(self.root)
+        
+        while temp:
+          node = temp.pop()
+          results.append(node.data)
+          
+          if node.right:
+              temp.append(node.right)
+          if node.left:
+              temp.append(node.left)
+        return results
+    else:
+        return 'Tree is empty'    
 
 if __name__ == "__main__":
     node1 = TNode(11)
@@ -102,17 +129,34 @@ if __name__ == "__main__":
     node1.right = TNode(13)
     node1.right.left = TNode(14)
     binary_tree = BinaryTree(node1)
-
-    print(binary_tree.pre_order())
-    print(binary_tree.pre_order())
-
-    # binary_tree.pre_order_iter()
+    print(binary_tree)
     print("*******************")
-    print(binary_tree.in_order())
 
-    print("*******************")
-    print(binary_tree.post_order())
-    print(binary_tree.max_value())
+    breadthh_first = BinaryTree()
+    breadthh_first.root = TNode(6)
+    breadthh_first.root.left = TNode(-1)
+    breadthh_first.root.left.left = TNode(10)
+    breadthh_first.root.left.left.left = TNode(18)
+    breadthh_first.root.left.left.left.right = TNode(28)
+    breadthh_first.root.right = TNode(5)
+    breadthh_first.root.right.left = TNode(7)
+    breadthh_first.root.right.right = TNode(3)
+    breadthh_first.root.right.right.left = TNode(93)
+    breadthh_first.root.right.right.right = TNode(3999)
+    print(breadthh_first.breadth_first(breadthh_first))
+
+
+    
+
+    # print(binary_tree.pre_order())
+    # print(binary_tree.pre_order())
+
+    # print("*******************")
+    # print(binary_tree.in_order())
+    
+    # print("*******************")
+    # print(binary_tree.post_order())
+    # print(binary_tree.max_value())
 
 
 

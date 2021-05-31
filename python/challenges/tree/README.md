@@ -36,6 +36,27 @@
 ### Solution:
 <!-- Embedded whiteboard image -->
 
-# - [Code of Tree](tree.py)
+# - [Code of Max Value of Tree](tree.py)
 
 ![Tree](../assets/tree_max_value.PNG)
+
+
+# Print the nodes in Breadth-First:
+<!-- Short summary or background information -->
+- Write a breadth first traversal method which takes a Binary Tree and returns the output in a order.
+
+### Challenge:
+<!-- Description of the challenge -->
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Time complexity => Big(N)
+
+- Space complexity => O(N)
+
+### Solution:
+<!-- Embedded whiteboard image -->
+
+# - [Code of breadth-first](tree.py)
+
+![Tree](../assets/breadth_first.PNG)

@@ -36,6 +36,7 @@ def test_init_right_and_left():
 
 def test_pre_order(tree_test):
     binary_tree_test = BinaryTree(tree_test) 
+
     actual = binary_tree_test.pre_order()
     # print(actual)
     expected = '[11, 12, 13, 14, 15]'
@@ -52,6 +53,31 @@ def test_post_order(tree_test):
     binary_tree_test = BinaryTree(tree_test) 
     actual = binary_tree_test.post_order()
     expected = '[12, 14, 15, 13, 11]'
-    assert actual == expected 
+    assert actual == expected
+
+
+@pytest.fixture
+def tree_test_breadthh_first():
+    value_breadth_first = TNode(0)
+    value_breadth_first.root = TNode(6)
+    value_breadth_first.root.left = TNode(-1)
+    value_breadth_first.root.left.left = TNode(10)
+    value_breadth_first.root.left.left.left = TNode(18)
+    value_breadth_first.root.left.left.left.right = TNode(28)
+    value_breadth_first.root.right = TNode(5)
+    value_breadth_first.root.right.left = TNode(7)
+    value_breadth_first.root.right.right = TNode(3)
+    value_breadth_first.root.right.right.left = TNode(3)
+    value_breadth_first.root.right.right.right = TNode(3)
+    return value_breadth_first
+
+def test_breadth_first(tree_test_breadthh_first):
+    breadth_first_test = BinaryTree(tree_test_breadthh_first.root) 
+
+    actual = breadth_first_test.breadth_first(breadth_first_test)
+    print(actual)
+    expected = [6, -1, 10, 18, 28, 5, 7, 3, 3, 3]
+    assert expected == actual
+
 
 
