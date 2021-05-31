@@ -36,6 +36,27 @@
 ### Solution:
 <!-- Embedded whiteboard image -->
 
-# - [Code of Tree](tree.py)
+# - [Code of Max Value of Tree](tree.py)
 
 ![Tree](../assets/tree_max_value.PNG)
+
+
+# Print the nodes in Breadth-First:
+<!-- Short summary or background information -->
+- 
+
+### Challenge:
+<!-- Description of the challenge -->
+- 
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Time complexity => 
+- Space complexity => 
+
+### Solution:
+<!-- Embedded whiteboard image -->
+
+# - [Code of breadth-first](tree.py)
+
+![Tree](../assets/.PNG)

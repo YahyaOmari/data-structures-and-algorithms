@@ -94,6 +94,9 @@ class BinaryTree:
           walk(current.left)
     walk(self.root)
     return self.data
+  
+  def breadth_first():
+    pass
     
 
 if __name__ == "__main__":
