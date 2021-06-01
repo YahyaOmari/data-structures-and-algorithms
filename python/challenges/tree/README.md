@@ -60,3 +60,29 @@
 # - [Code of breadth-first](tree.py)
 
 ![Tree](../assets/breadth_first.PNG)
+
+
+# Fizz_Buzz:
+<!-- Short summary or background information -->
+- Create function called fizz_buzz which takes a tree_data as an argument. 
+
+### Challenge:
+<!-- Description of the challenge -->
+- Create a new tree with the same previous code and modify ..
+    - If the value is divisible by 3, replace the value with “Fizz”
+    - If the value is divisible by 5, replace the value with “Buzz”
+    - If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+    - If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Time complexity => Big(N)
+
+- Space complexity => O(N)
+
+### Solution:
+<!-- Embedded whiteboard image -->
+
+# - [Code of Fizz_Buzz](fizz_buzz_tree.py)
+
+![Tree](../assets/.PNG)
