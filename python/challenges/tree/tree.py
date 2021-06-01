@@ -121,7 +121,11 @@ class BinaryTree():
               temp.append(node.right)
         return results
     else:
-        return 'Tree is empty'    
+        return 'Tree is empty'
+        
+  
+
+
 
 if __name__ == "__main__":
     node1 = TNode(11)
@@ -143,9 +147,7 @@ if __name__ == "__main__":
     breadthh_first.root.right.right = TNode(3)
     breadthh_first.root.right.right.left = TNode(93)
     breadthh_first.root.right.right.right = TNode(3999)
-    print(breadthh_first.breadth_first(breadthh_first))
-
-
+    # print(breadthh_first.breadth_first(breadthh_first))
     
 
     # print(binary_tree.pre_order())
