@@ -76,7 +76,7 @@ def test_breadth_first(tree_test_breadthh_first):
 
     actual = breadth_first_test.breadth_first(breadth_first_test)
     print(actual)
-    expected = [6, -1, 10, 18, 28, 5, 7, 3, 3, 3]
+    expected = [6, -1, 5, 10, 7, 3, 18, 3, 3, 28]
     assert expected == actual
 
 
