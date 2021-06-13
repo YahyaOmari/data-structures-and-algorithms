@@ -47,7 +47,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [multi_bracket_validation](./python/challenges/multi_bracket_validation/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README.md)
+- [insertion sort](./python/challenges/insertion_sort/README.md)
 
 <!-- ------------------------------------------------- -->
 - [](./python/challenges//README.md)
