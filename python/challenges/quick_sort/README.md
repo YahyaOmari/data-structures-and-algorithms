@@ -8,8 +8,8 @@
 
 ### Approach & Efficiency:
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-- 
-- 
+- Time Complexity O(n2)
+- Space Complexity O(n)
 
 ### Solution:
 <!-- Embedded whiteboard image -->
