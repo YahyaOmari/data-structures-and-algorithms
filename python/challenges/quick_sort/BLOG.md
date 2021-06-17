@@ -20,12 +20,24 @@ def quick_sort(numbers):
 
     return quick_sort(numbers_lower) + [pivot] + quick_sort(numbers_greater)
 
-print(quick_sort([7,6]))
+"print(quick_sort([7,6]))"
 
-------------------
+
 # Tracing the code
 
-------------------
+1. Numbers => list[7,6]
+2. Length = 2
+3. Pivot = 6
+4. numbers_lower = []
+5. numbers_greater= []
+6. Looping in the numbers with item, so now item = 7
+7. Check if item greater then pivot, if yes it will be append in the numbers_greater list.
+8. Now the numbers is empty list, and the length is is zero
+9. Now we are checking if the length is less or equal than 1 then return the numbers
+10. Now going back to the beggining of the function, numbers contains only 7 and the length is 1
+11. it will return the numbers now again, because the length is less or equal than 1
+12. At the end it wil return quick_sort(numbers_lower) + [pivot] + quick_sort(numbers_greater)
+
 
 # Test
 
