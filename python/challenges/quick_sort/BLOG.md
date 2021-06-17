@@ -20,7 +20,10 @@ def quick_sort(numbers):
 
     return quick_sort(numbers_lower) + [pivot] + quick_sort(numbers_greater)
 
-print(quick_sort([7,6,5,6,7,8,9,0]))
+print(quick_sort([7,6]))
+
+------------------
+# Tracing the code
 
 ------------------
 
