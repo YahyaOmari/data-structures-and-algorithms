@@ -51,3 +51,24 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 <!-- ------------------------------------------------- -->
 - [Merge Sort](./python/challenges//README.md)
+
+<!-- ------------------------------------------------- -->
+- [quick_sort](./python/challenges/quick_sort/README.md)
+
+<!-- ------------------------------------------------- -->
+- [](./python/challenges/insertion_sort/README.md)
+
+<!-- ------------------------------------------------- -->
+- [](./python/challenges//README.md)
+
+<!-- ------------------------------------------------- -->
+- [](./python/challenges/insertion_sort/README.md)
+
+<!-- ------------------------------------------------- -->
+- [](./python/challenges//README.md)
+
+<!-- ------------------------------------------------- -->
+- [](./python/challenges/insertion_sort/README.md)
+
+<!-- ------------------------------------------------- -->
+- [](./python/challenges//README.md)
