@@ -91,9 +91,9 @@ class Hashtable:
 if __name__ == "__main__":
     hashtable = Hashtable()
     hashtable.add("yahya", 10)
-    hashtable.add("no", False)
     hashtable.add("go", 'play football')
-    print(hashtable.get("no"))
+    hashtable.add("no", False)
     print(hashtable.get("go"))
+    print(hashtable.get("no"))
     print(hashtable.contains("yahya"))
     print(hashtable.hash('united'), "hashh")
