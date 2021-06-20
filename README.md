@@ -56,10 +56,10 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [quick_sort](./python/challenges/quick_sort/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges/insertion_sort/README.md)
+- [hashtable](./python/challenges/hashtable/README.md)
 
 <!-- ------------------------------------------------- -->
-- [](./python/challenges//README.md)
+- [repeated_word](./python/challenges/repeated_word/README.md)
 
 <!-- ------------------------------------------------- -->
 - [](./python/challenges/insertion_sort/README.md)
