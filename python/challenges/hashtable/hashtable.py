@@ -28,10 +28,9 @@ class LinkedList:
         return output
 
 class Hashtable:
-    def __init__(self,size=1024):
+    def __init__(self, size = 1024):
         self.size = size
         self._buckets = [None]*size
-
     """
     This function takes in an arbitrary key and returns an index in the collection.
     """
