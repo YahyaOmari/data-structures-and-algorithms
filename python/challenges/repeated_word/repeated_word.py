@@ -1,14 +1,20 @@
 import re
 from challenges.hashtable.hashtable import Hashtable
+def spliting(str):
+    str = str.replace(',','')
+    list_str = str.split(' ')
+    
+    return list_str
+
 def repeated_word(input):
     hashmap = Hashtable()
 
-    words_list = input.split()
+    words_list = spliting(input)
     for word in words_list:
-        if not hashmap.contains(word):
-            hashmap.add(word, "0")
-        else:
-            return word
+        lower_word = word.lower()
+        if hashmap.contains(lower_word):
+            return lower_word
+        hashmap.add(lower_word, 1)
 
 
 #     duplicates_list=[]
