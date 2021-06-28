@@ -115,6 +115,25 @@ class  Graph:
                 else:
                     visited.add(neighbor_vertex)
                 queue.enqueue(neighbor_vertex)
+    
+    def business_trip(self, cities):
+            cost = 0
+            flag = True
+            for i in range(len(cities)-1):
+                if not flag:
+                    return False, '$0'
+                neighbors = self.get_neighbors(cities[i])
+                for neighbor in neighbors:
+                    if cities[i+1] == neighbor.vertex:
+                        print(neighbor.weight)
+                        cost += neighbor.weight
+                        flag = True
+                        break
+                    else:
+                        flag = False
+            if not flag :
+                cost = 0
+            return flag, str(cost)+'$'
 
 if __name__ == '__main__':
     graph = Graph()
@@ -124,18 +143,20 @@ if __name__ == '__main__':
     node_d = graph.add_node('d')
     node_e = graph.add_node('e')
     node_f = graph.add_node('f')
-    graph.add_edge(node_a,node_c)
-    graph.add_edge(node_a,node_d)
-    graph.add_edge(node_b,node_c)
-    graph.add_edge(node_b,node_f)
-    graph.add_edge(node_c,node_e)
-    graph.add_edge(node_d ,node_e)
-    graph.add_edge(node_e,node_f)
-    print(graph.get_nodes())
-    print(graph.get_neighbors(node_a))
-    print(graph.get_neighbors(node_b))
-    print(graph.get_neighbors(node_c))
-    print(graph.get_neighbors(node_d))
-    print(graph.get_neighbors(node_e))
-    print(graph.get_neighbors(node_f))
-    print(graph.size())
+    graph.add_edge(node_a,node_c, 5)
+    graph.add_edge(node_a,node_d,5)
+    graph.add_edge(node_b,node_c, 1)
+    graph.add_edge(node_b,node_f, 4)
+    graph.add_edge(node_c,node_e, 9)
+    graph.add_edge(node_d ,node_e, 5)
+    graph.add_edge(node_e,node_f, 7)
+    graph.get_nodes()
+    graph.get_neighbors(node_a)[0].weight
+    graph.get_neighbors(node_b)[0].weight
+    graph.get_neighbors(node_c)[0].weight
+    graph.get_neighbors(node_d)[0].weight
+    graph.get_neighbors(node_e)[0].weight
+    graph.get_neighbors(node_f)[0].weight
+    graph.size()
+    list_graph = [node_c ,node_e]
+    print(graph.business_trip(list_graph))

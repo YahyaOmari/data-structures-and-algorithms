@@ -28,6 +28,23 @@
 <!-- Embedded whiteboard image -->
 
 
-<!-- ![Hash table](../assets/.jpg) -->
+- [Code of graph](graph.py)
+
+# Business Trip and Challenge:
+<!-- Short summary or background information -->
+- Write a function called business trip
+- Arguments: graph, array of city names
+- Return: cost or null
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Space complexity O(n)
+- Time complexity O(n)
+
+### Solution:
+<!-- Embedded whiteboard image -->
+
+
+![Sum edges](../assets/sum_edges.PNG)
 
 - [Code of graph](graph.py)
