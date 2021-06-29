@@ -48,3 +48,22 @@
 ![Sum edges](../assets/sum_edges.PNG)
 
 - [Code of graph](graph.py)
+
+# Depth First and Challenge:
+<!-- Short summary or background information -->
+- Depth first
+- Arguments: An adjacency list as a graph
+- Return: A collection of nodes in their pre-order depth-first traversal order
+- Display the collection
+
+### Approach & Efficiency:
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Space complexity O(n)
+- Time complexity O(n)
+
+### Solution:
+<!-- Embedded whiteboard image -->
+
+
+
+- [Code of graph](graph.py)
