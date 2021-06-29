@@ -1,3 +1,59 @@
+class EmptyStackException(Exception):
+  pass
+
+class Node: 
+  def __init__(self, value=None):
+    self.value = value
+    self.next = None
+
+class Stack:
+  def __init__(self, node=None):
+    self.top = node
+  
+  def push(self, value):
+    """
+    Push the elements to the top of the (stack)
+    returns none 
+    """
+    if not self.top:
+        self.top = Node(value)
+    else:
+      node = Node(value)
+      node.next = self.top
+      self.top = node
+  
+  def pop(self):
+      if self.is_empty():
+        print("stack is empty")
+        raise EmptyStackException("stack is empty")
+      else:
+          temp = self.top
+          self.top = self.top.next
+          temp.next = None
+          return temp.value
+
+  
+  def is_empty(self):
+    """ Returns False if the stack is empty or False if it is not """
+    if self.top:
+      return False
+    return True 
+
+  def peek(self):
+    """ Returns the value at the top without modifying the stack, raises an exception otherwise """
+    if not self.is_empty():
+      return self.top.value
+    
+    raise EmptyStackException("Cannot peek an empty stack")
+  
+  def __str__(self):
+    current = self.top
+    items = []
+    while current:
+      items.append(str(current.value))
+      current = current.next
+    return "\n".join(items)
+
 class Queue:
     def __init__(self):
         self.front = None
@@ -135,6 +191,28 @@ class  Graph:
                 cost = 0
             return flag, str(cost)+'$'
 
+    def depth_first(self, start_vertex):
+        vertexes = []
+        visited = []
+        stack = Stack()
+
+        if start_vertex not in self.adjacency_list:
+            raise KeyError('Start vertex is not found in the graph')
+        
+        visited.append(start_vertex)
+        stack.push(start_vertex)
+        
+        while not stack.is_empty():
+            vertex = stack.pop()
+            vertexes.append(vertex)
+            vertex_neighbors = self.get_neighbors(vertex)
+        
+        for neighbor in vertex_neighbors:
+            if neighbor.weight not in visited :
+                visited.append(neighbor.weight)
+                stack.push(neighbor.weight)
+        return str(vertexes[0])
+
 if __name__ == '__main__':
     graph = Graph()
     node_a = graph.add_node('a')
@@ -159,4 +237,4 @@ if __name__ == '__main__':
     graph.get_neighbors(node_f)[0].weight
     graph.size()
     list_graph = [node_c ,node_e]
-    print(graph.business_trip(list_graph))
+    print(graph.depth_first(node_a))
